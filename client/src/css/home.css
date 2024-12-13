@@ -1,0 +1,242 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    /* overflow-y: hidden; */
+    overflow-x: hidden;
+}
+
+.sidebar {
+    background-color: lightgray;
+    /* width: 250px; */
+    display: flex;
+    /* flex-direction: column; */
+    /* align-items: center; */
+    justify-content: center;
+    font-family: "Fira Sans", sans-serif;
+    height: 100vh;
+    transition: transform 0.3s ease-in-out;
+    position: absolute;
+    z-index: 2;
+    padding-top: 20px;
+}
+
+.sidebar nav {
+    padding: 20px;
+
+}
+
+.sidebar nav li {
+    list-style-type: none;
+    font-size: 30px;
+    padding: 33px 0px;
+}
+
+.sidebar nav li a {
+    text-decoration: none;
+    color: black;
+    /* font-weight: bold; */
+}
+
+.main {
+    /* background-color: yellow; */
+    width: 90vw;
+
+}
+
+.container {
+    display: flex;
+}
+
+.infoContainer {
+    /* background-color: skyblue; */
+    height: 60vh;
+    width: 70vw;
+    margin: 90px auto;
+    display: flex;
+    justify-content: space-around;
+    margin-left: 15vw;
+}
+
+.devPic img {
+    height: 60vh;
+}
+
+.devInfo {
+    font-size: 16px;
+    display: flex;
+    /* align-items: center; */
+    margin-top: 30px;
+    justify-content: center;
+    flex-direction: column;
+    font-family: "Source Code Pro", monospace;
+}
+
+.hello {
+    /* font-size: 55px; */
+    font-size: 3.5em;
+}
+
+.name {
+    /* font-size: 50px; */
+    font-size: 3.2em;
+    font-weight: bolder;
+    font-family: "Fira Sans", sans-serif;
+}
+
+.about {
+    /* font-size: 30px; */
+    font-size: 1.9em;
+    font-weight: 500;
+}
+
+.moreabout {
+    margin-top: 20px;
+    /* font-size: 20px; */
+    font-size: 1.3em;
+    font-family: "Fira Sans", sans-serif;
+}
+
+.btn {
+    cursor: pointer;
+    padding: 10px 15px;
+    border-radius: 22px;
+    background-color: black;
+    color: white;
+    font-weight: bold;
+    /* font-size: 15px; */
+    font-size: 0.9em;
+    margin: 0 3px;
+    /* box-shadow: 4px 2px 2px 2px black; */
+
+}
+
+.btn-sm {
+    font-size: 12px;
+    padding: 10px 12px;
+    margin: 10px 0;
+}
+
+.buttons {
+    margin-top: 34px;
+}
+
+.btn:hover {
+    background-color: white;
+    color: black;
+    background-color: white;
+    color: black;
+}
+
+.navbar {
+    position: absolute;
+    cursor: pointer;
+    top: 10px;
+    left: 10px;
+    display: flex;
+    flex-direction: row;
+}
+
+.sidebarGo {
+    transform: translate(-443px, 0px);
+    position: absolute;
+}
+
+.cross {
+    margin-left: 150px;
+    z-index: 2;
+}
+
+footer {
+    text-align: center;
+    margin-top: 50px;
+    padding: 10px 0;
+    background-color: #333;
+    color: white;
+    width: 100vw;
+    /* height: 9vh; */
+}
+
+
+/* .social-icons {
+    margin-top: 10px;
+} */
+
+.social-icons a {
+    display: inline-block;
+    margin: 0 10px;
+    color: skyblue;
+    font-size: 18px;
+}
+
+.fab1:hover{
+    color: #3b5998;
+}
+.fab2:hover{
+    color: #00acee ;
+}
+.fab3:hover{
+   color: #f80f78c3;
+
+}
+.fab4:hover{
+    color: #0e76a8 ;
+}
+.fab5:hover{
+    color: #171515 ;
+}
+
+#fab{
+    border-right: 2px solid white;
+    padding-right: 20px;
+}
+
+@media (max-width: 900px) {
+
+    /* * {
+        background-color: skyblue;
+    } */
+    .devInfo {
+        font-size: 12px;
+    }
+
+    .devPic {
+        display: none;
+    }
+
+    footer {
+        font-size: 12px;
+        height: 60px;
+    }
+
+    .fab {
+        font-size: 15px;
+        
+    }
+
+
+    /* #fab{
+        border-right: 0px solid white;
+        padding-right: 0px;
+
+    } */
+}
+
+/* @media (max-height: 1024px) {
+    .devPic {
+       height: 20vh;
+    }
+} */
+
+
+/* text reveal for about section  */
+
+
