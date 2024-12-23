@@ -6,23 +6,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>G Praveen Kumar - Web Developer Portfolio</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-    <link rel="stylesheet" href="../src/css/intro.css">
+    <link rel="stylesheet" href="/css/intro.css">
+    <link rel="stylesheet" href="/css/sidebar.css">
 </head>
 
 <body>
     <div class="container">
         <%- include('navbar')%>
         <div class="main">
-            <div class="navbar">
-                <img class="ham" src="../src/img/ham.png" alt="image" width="25px" height="25px">
-                <img class="cross" src="../src/img/cross.png" alt="image" width="20px" height="20px">
-            </div>
+           <%- include('navbar-img') %>
             <div class="infoContainer">
                 <div class="devInfo">
                     <h1>About Me</h1>
-                    <p>Steven Paul Jobs was an American businessman, inventor, and investor best known for co-founding
-                        the technology giant Apple Inc. Jobs was also the founder of NeXT and chairman and majority
-                        shareholder of Pixar.</p>
+                    <p>Hello, I'm G. Praveen Kumar, CEO and Co-Founder of SupplyNet and SocialX. I specialize as a Web3 Blockchain Full Stack Developer. <br><br>
+
+                        Currently, I am pursuing an undergraduate degree in Computer Science & Engineering with a specialization in Artificial Intelligence (AI). Alongside my studies, I am actively working as a freelancer and have successfully completed several projects for clients.
+                        <br> <br>
+                        I am always looking for new opportunities to collaborate and innovate.
+                    </p>
                     <h2>My Skills</h2>
                     <div id="skillContainer">
                         <div class="skillItem"> HTML: <div class="skill"></div>
@@ -73,16 +74,14 @@
                         
                     </div>
                 </div>
-
-                <!-- to do to crate a gallery for projects -->
                 <div class="devPic">
-                    <img src="../src/img/mypic.jpeg" alt="image">
+                    <img src="/img/mypic.jpeg" alt="image">
                 </div>
             </div>
         </div>
     </div>
     <%- include('footer') %>
-    <script src="../src/js/index.js"></script>
+    <script src="/js/index.js"></script>
 
 </body>
 

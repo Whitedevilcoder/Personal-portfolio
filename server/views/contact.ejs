@@ -1,45 +1,42 @@
-<!DOCTYPE html>
+
 <html lang="en">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>G Praveen Kumar - Web Developer Portfolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
     <link rel="stylesheet" href="/css/contact.css">
+    <link rel="stylesheet" href="/css/sidebar.css">
 </head>
 
 <body>
     <div class="container">
         <%- include('navbar') %>
         <div class="main">
-         
-                <%- include('navbar-img') %>
-                
-         
+            <%- include('navbar-img') %>
             <div class="contactform">
                 <h1>
                     Contact me for work & other general Enquiries!
                 </h1>
-                <form>
+                <form action="/contact" method="post" id="contactForm">
                     <div class="form-group">
                         <label for="clientName">Name</label>
-                        <input type="name" class="form-control" id="clientName" aria-describedby="nameHelp" placeholder="Name">
+                        <input type="text" name="name" class="form-control" id="clientName" aria-describedby="nameHelp" placeholder="Name">
                     </div>
                     <div class="form-group">
                         <label for="clientEmail">Email address</label>
-                        <input type="email" class="form-control" id="clientEmail" aria-describedby="emailHelp">
-                        <small id="emailHelp" class="form-text text-muted"><br> We'll never share your email & phone
-                            with
-                            anyone else.</small>
+                        <input type="email" name="email" class="form-control" id="clientEmail" aria-describedby="emailHelp" placeholder="Email-ID">
+                        <small id="emailHelp" class="form-text text-muted"><br> We'll never share your email & phone with anyone else.</small>
                     </div>
                     <div class="form-group">
-                        <label for="clientphonne">Phone</label>
-                        <input type="phone" class="form-control" id="clientphonne">
+                        <label for="clientPhone">Phone</label>
+                        <input type="text" name="phone" class="form-control" id="clientPhone" placeholder="Phone number">
                     </div>
                     <div class="form-group">
                         <label for="clientEnquiry">Enquiries</label>
-                        <input type="enquiries" class="form-control" id="clientEnquiry"
-                            aria-describedby="enquiriesHelp">
+                        <textarea name="enquiries" class="form-control" id="clientEnquiry" aria-describedby="enquiriesHelp" style="width: 465px;" placeholder="Enquiries"></textarea>
                     </div>
                     <div id="form-check">
                         <input type="checkbox" id="form-check-input" id="isClient">
@@ -47,13 +44,19 @@
                     </div>
                     <button type="submit" class="btn btn-sm">Submit</button>
                 </form>
-                <!-- <div class="devPic">
-                    <img src="dev.png" alt="image">
-                </div> -->
+                <div id="formMessage" class="form-message"></div>
+
             </div>
         </div>
     </div>
+
+    
+    <%- include('footer')%>
+
     <script src="/js/index.js"></script>
+    
+
+    
 
 </body>
 

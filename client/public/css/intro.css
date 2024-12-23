@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    width: 100vw;
+    overflow-x: hidden;
+}
+
+.main {
+    width: 90vw;
+}
+
+.container {
+    display: flex;
+}
+
+.infoContainer {
+    width: 70vw;
+    margin: 90px auto;
+    display: flex;
+    justify-content: space-around;
+    margin-left: 15vw;
+}
+
+.devPic img {
+    height: 60vh;
+}
+
+.devInfo {
+    display: flex;
+    margin-top: 30px;
+    justify-content: center;
+    flex-direction: column;
+    font-family: "Source Code Pro", monospace;
+}
+
+p {
+    padding-bottom: 10px;
+}
+
+#skillContainer {
+    padding-top: 10px;
+    font-weight: bold;
+}
+
+.skillItem {
+    padding-bottom: 8px;
+}
+
+.skill {
+    width: 250px;
+    height: 7px;
+    border-radius: 8px;
+    background-color: #333;
+}
+
+.t100 { width: 250px; }
+.t75 { width: 187.5px; }
+.t50 { width: 125px; }
+.t25 { width: 62.5px; }
+.t0 { width: 0px; }
+
+footer {
+    text-align: center;
+    margin-top: 50px;
+    padding: 10px 0;
+    background-color: #333;
+    color: #fff;
+    width: 100vw;
+}
+
+.social-icons a {
+    display: inline-block;
+    margin: 0 10px;
+    color: #fff;
+    font-size: 24px;
+}
+
+@media (max-width: 1080px) {
+    .devPic {
+        display: none;
+    }
+}
+
+@media (max-width: 900px) {
+    .devInfo {
+        font-size: 10px;
+    }
+
+    .devPic {
+        display: none;
+    }
+
+    footer {
+        font-size: 10px;
+        height: 60px;
+    }
+
+    .fab {
+        font-size: 15px;
+    }
+}
