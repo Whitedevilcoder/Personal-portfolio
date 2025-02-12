@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>G Praveen Kumar - Web Developer Portfolio</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" />
+
     <link rel="stylesheet" href="/css/intro.css">
     <link rel="stylesheet" href="/css/sidebar.css">
     <link rel="stylesheet" href="/css/button.css">
@@ -14,95 +16,152 @@
 <body>
     <div class="container">
         <%- include('navbar')%>
-        <div class="main">
-           <%- include('navbar-img') %>
-            <div class="infoContainer">
-                <div class="devInfo">
-                    <h1>About Me</h1>
-                    <p>Hello, I'm G. Praveen Kumar, CEO and Co-Founder of SupplyNet and SocialX. I specialize as a Web3 Blockchain Full Stack Developer. <br><br>
+            <div class="main">
+                <%- include('navbar-img') %>
+                    <div class="infoContainer">
+                        <div class="devInfo">
+                            <h1>About Me</h1>
+                            <p>Hello, I'm G. Praveen Kumar, CEO and Co-Founder of SupplyNet and SocialX. I specialize as
+                                a Web3 Blockchain Full Stack Developer. <br><br>
 
-                        Currently, I am pursuing an undergraduate degree in Computer Science & Engineering with a specialization in Artificial Intelligence (AI). Alongside my studies, I am actively working as a freelancer and have successfully completed several projects for clients.
-                        <br> <br>
-                        I am always looking for new opportunities to collaborate and innovate.
-                    </p>
-                    <h2>My Skills</h2>
-                    <div id="skillContainer">
-                        <div class="skillItem"> HTML: <div class="skill"></div>
-                        </div>
-                        <div class="skillItem"> CSS: <div class="skill"></div>
-                        </div>
-                        <div class="skillItem"> Javascript: <div class="skill"></div>
-                        </div>
-                        <div class="skillItem"> Solidity: <div class="skill t75"></div>
-                        </div>
-                        <div class="skillItem"> Node Js: <div class="skill t75"></div>
-                        </div>
-                        <div class="skillItem"> Python: <div class="skill t50"></div>
-                        </div>
-                        <div class="skillItem"> Web3.js: <div class="skill t50"></div>
-                        </div>
-                    </div>
-
-                    <h1>
-                        My Projects
-                    </h1>
-                    <div class="projects" style="display: flex; width: 60vw; flex-wrap: wrap;">
-                       
-                        <div class="projs" style="border: 2px solid black; width: 20vw; padding: 40px; margin: 20px;">
-                            <h2>Personal Password Manager</h2>
-                            <div class="desp">
-                                <p>A Personal Password Manager to keep your all passwords in safe in your local system that NO other can access your private information</p>
+                                Currently, I am pursuing an undergraduate degree in Computer Science & Engineering with
+                                a specialization in Artificial Intelligence (AI). Alongside my studies, I am actively
+                                working as a freelancer and have successfully completed several projects for clients.
+                                <br> <br>
+                                I am always looking for new opportunities to collaborate and innovate.
+                            </p>
+                            <h2>My Skills</h2>
+                            <div id="skillContainer">
+                                <div class="skillItem"> HTML: <div class="skill"></div>
+                                </div>
+                                <div class="skillItem"> CSS: <div class="skill"></div>
+                                </div>
+                                <div class="skillItem"> Javascript: <div class="skill"></div>
+                                </div>
+                                <div class="skillItem"> Solidity: <div class="skill t75"></div>
+                                </div>
+                                <div class="skillItem"> Node Js: <div class="skill t75"></div>
+                                </div>
+                                <div class="skillItem"> Python: <div class="skill t50"></div>
+                                </div>
+                                <div class="skillItem"> Web3.js: <div class="skill t50"></div>
+                                </div>
                             </div>
-                            <button class="btn s-btn">Details</button>
+
+                            <h1>
+                                My Projects
+                            </h1>
+                            <div class="projects" style="display: flex; width: 60vw; flex-wrap: wrap;">
+
+                                <div class="projs"
+                                    style="border: 2px solid black; width: 20vw; padding: 40px; margin: 20px;">
+                                    <h2>Personal Password Manager</h2>
+                                    <div class="desp">
+                                        <p>A Personal Password Manager to keep your all passwords in safe in your local
+                                            system that NO other can access your private information</p>
+                                    </div>
+                                    <button class="btn s-btn">Details</button>
+                                </div>
+                                <div class="projs"
+                                    style="border: 2px solid black; width: 20vw; padding: 40px; margin: 20px;">
+                                    <h2>Connect Music</h2>
+                                    <p>Connect Music is an application to Transfer yourmusic playlists from one platform
+                                        to another</p>
+                                    <button class="btn s-btn">Details</button>
+
+                                </div>
+                                <div class="projs"
+                                    style="border: 2px solid black; width: 20vw; padding: 40px; margin: 20px;">
+                                    <h2>SupplyNet</h2>
+                                    <p>Decentralized Supply Chain Management <br>
+
+                                        SupplyNet is a blockchain-based platform that enhances supply chain transparency
+                                        and efficiency.</p>
+                                    <button class="btn s-btn">Details</button>
+
+                                </div>
+                                <div class="projs"
+                                    style="border: 2px solid black; width: 20vw; padding: 40px; margin: 20px;">
+                                    <h2>FinFlow</h2>
+                                    <p>Decentralized Fundraising Platform <br>
+
+                                        FinFlow is a blockchain-based decentralized application (DApp) for crowdfunding.
+                                    </p>
+                                    <button class="btn s-btn">Details</button>
+
+                                </div>
+                                <div class="projs"
+                                    style="border: 2px solid black; width: 20vw; padding: 40px; margin: 20px;">
+                                    <h2>Personal Portfolio Website</h2>
+                                    <p>My Portfolio <br>
+
+                                        Showcasing my blockchain and DApp projects</p>
+                                    <button class="btn s-btn">Details</button>
+
+                                </div>
+                                <div class="projs"
+                                    style="border: 2px solid black; width: 20vw; padding: 40px; margin: 20px;">
+                                    <h2>Personal AI Assistant </h2>
+                                    <h4>Machine Aided Neural Intelligence System for Human Assistance..</h4>
+                                    <button class="btn s-btn">Details</button>
+
+                                </div>
+
+                                <div class="container mt-5">
+                                    <div class="accordion accordion-flush mt-4" id="accordionExample">
+                                        <div class="accordion-item">
+                                            <h2 class="accordion-header" id="headingTwo">
+                                                <button class="accordion-button collapsed" type="button"
+                                                    data-bs-toggle="collapse" data-bs-target="#collapseTwo"
+                                                    aria-expanded="false" aria-controls="collapseTwo">
+                                                    Personal Password Manager
+                                                </button>
+                                            </h2>
+
+                                            <div id="collapseTwo" class="accordion-collapse collapse"
+                                                aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                                                <div class="accordion-body">
+                                                    <p>A Personal Password Manager to keep your all passwords in safe in your local
+                                                        system that NO other can access your private information</p>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="accordion-item">
+                                            <h2 class="accordion-header" id="headingOne">
+                                                <button class="accordion-button collapsed" type="button"
+                                                    data-bs-toggle="collapse" data-bs-target="#collapseOne"
+                                                    aria-expanded="false" aria-controls="collapseOne">
+                                                    Java
+                                                </button>
+                                            </h2>
+                                            <div id="collapseOne" class="accordion-collapse collapse"
+                                                aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                                                <div class="accordion-body">
+                                                    Java is a programming
+                                                    language that is used
+                                                    in modern development
+                                                    worldwide.
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+
+                            </div>
                         </div>
-                        <div class="projs" style="border: 2px solid black; width: 20vw; padding: 40px; margin: 20px;">
-                            <h2>Connect Music</h2>
-                            <p>Connect Music is an application to Transfer yourmusic playlists from one platform to another</p>
-                            <button class="btn s-btn">Details</button>
-
+                        <div class="devPic">
+                            <img src="/img/mypic.jpeg" alt="image">
                         </div>
-                        <div class="projs" style="border: 2px solid black; width: 20vw; padding: 40px; margin: 20px;">
-                            <h2>SupplyNet</h2>
-                            <p>Decentralized Supply Chain Management <br>
-
-                                SupplyNet is a blockchain-based platform that enhances supply chain transparency and efficiency.</p>
-                            <button class="btn s-btn">Details</button>
-
-                        </div>
-                        <div class="projs" style="border: 2px solid black; width: 20vw; padding: 40px; margin: 20px;">
-                            <h2>FinFlow</h2>
-                            <p>Decentralized Fundraising Platform <br>
-
-                                FinFlow is a blockchain-based decentralized application (DApp) for crowdfunding.</p>
-                            <button class="btn s-btn">Details</button>
-
-                        </div>
-                        <div class="projs" style="border: 2px solid black; width: 20vw; padding: 40px; margin: 20px;">
-                            <h2>Personal Portfolio Website</h2>
-                            <p>My Portfolio <br>
-
-                                Showcasing my blockchain and DApp projects</p>
-                            <button class="btn s-btn">Details</button>
-
-                        </div>
-                        <div class="projs" style="border: 2px solid black; width: 20vw; padding: 40px; margin: 20px;">
-                            <h2>Personal AI Assistant </h2>
-                            <h4>Machine Aided Neural Intelligence System for Human Assistance..</h4>
-                            <button class="btn s-btn">Details</button>
-
-                        </div>
-
-                        
                     </div>
-                </div>
-                <div class="devPic">
-                    <img src="/img/mypic.jpeg" alt="image">
-                </div>
             </div>
-        </div>
     </div>
     <%- include('footer') %>
-    <script src="/js/index.js"></script>
+        <script src="/js/index.js"></script>
+        <script src=
+        "https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js">
+            </script>
 
 </body>
 
